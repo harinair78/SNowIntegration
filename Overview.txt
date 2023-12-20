@@ -1,5 +1,0 @@
-follow up discussion for early next week to cover the following topics:
-
-•	Deep dive on the discovery/ blueprinting process
-•	Review of the additional case studies
-•	Discussion of data and analytics integration 
