@@ -1,0 +1,87 @@
+{
+    "profileName": "Coventry-Collections",
+    "initialProvisioning": {
+        "activeDirectory": ["First Name", "Preferred Name", "Last Name", "Employee No", "Login ID",
+            "Email","Mirror User", "Email Type", "Request ID", "External Address",
+            {"adGroups": []}
+        ]
+    },
+    "softwareLicensing": [
+        {"O365": "E3", "windowsMobility10": "VDA"}
+    ],
+    "infrastructure": {
+        "AWS": {
+            "account": "372860290376",
+            "vpc": "vpc-01e3b22f0d6f00d53",
+            "directory": "d-9067bacb91",
+            "awsWorkspace": {
+                "bundleID": "a unique value for AWS region",
+                "bundle": "Performance",
+                "rootDriveSpace": "80 GB SSD",
+                "userDriveSpace": "100 GB SSD",
+                "os": "Win10"
+
+            }
+        }
+
+    },
+    
+    "installedApplications": [
+        "Acrobat Reader" ,
+        "MS Office",
+        {   "SmartAdvisor": {
+                "appProv": {
+                    "provStructApp": "Citrix Client"
+                }
+            }
+        },
+        {   "DecisionPoint": {
+            "appProv": {   },
+            "userProv": {  }
+        }
+        },
+
+        {   "NDS": {
+                "appProv": {
+                    "provStructScript": "\\“\\\\prod1nas.production.int\\Data\\fsns\\PRD\\Applications\\Collections”"
+                }
+            }
+        },
+        {   "CrystalReports": {
+                "appProv": {
+                    "provStructInstaller": {
+                        "loc": "K:\\ISApps\\SCCM Programs\\Crystal Reports\\Crystal Reports 2020",
+                        "cmd": "CR202000_0-70005715 (1).EXE"
+                    }
+                }
+            }
+        },
+        "Fax2mail"
+    ],
+
+    "saasApplications": [
+        { "InContact": {
+                "roleKey1": "roleVal1"
+            }
+        },
+        {   "Salesforce": {
+                "mimicRoleId": "sfRole"
+            }
+        },
+        {   "Sharepoint": {
+                "roleKey2": "roleVal2"
+            }
+        }
+    ],
+
+    "sharedNetworkAccess": [{
+            "networkPath": "//prod1nas/",
+            "accessType": "RW"
+        }
+    ],
+    "sharedEmails": [
+        "fsdmefinance@enlyte.com",
+		"fscollections@mitchell.com"
+    ],
+    "comments": "https://confluence.corp.int/display/CCOE/WorkSpaces+Projects"
+}
